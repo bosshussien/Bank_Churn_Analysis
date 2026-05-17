@@ -1,5 +1,4 @@
-# this file i made to make and use my own classes which i will make to help me
-# save time and effort
+# I made this script as a library for my custom made classes and methods to help me save time and effort
 
 import pandas as pd
 import numpy as np
@@ -7,7 +6,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-class OutlierHandling:
+class OutlierHandling:  # this class is using IQR to display and handle outliers in a dataframe
 
     exception_list = []
 
