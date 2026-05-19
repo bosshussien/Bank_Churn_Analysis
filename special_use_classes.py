@@ -89,7 +89,8 @@ class OutlierHandling:  # this class is using IQR to display and handle outliers
 
     # this function to return count
     def count_outliers(self, column: pd.Series):
-        higher, lower = self.return_outliers()
+        c = column.copy()
+        higher, lower = self.return_outliers(c)
         number_of_outliers = len(higher) + len(lower)
         return number_of_outliers
 
